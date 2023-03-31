@@ -20,6 +20,7 @@ pageBody.onload = function() {
 
 aboutButton.onclick = function(){
     aboutSection.hidden = false;
+    aboutSection.style.display = 'flex';
     projectsSection.hidden = true;
     skillsSection.hidden = true;
     contactSection.hidden = true;
@@ -27,6 +28,7 @@ aboutButton.onclick = function(){
 
 projectsButton.onclick = function(){
     aboutSection.hidden = true;
+    aboutSection.style.display = 'none';
     projectsSection.hidden = false;
     skillsSection.hidden = true;
     contactSection.hidden = true;;
@@ -34,6 +36,7 @@ projectsButton.onclick = function(){
 
 skillsButton.onclick = function(){
     aboutSection.hidden = true;
+    aboutSection.style.display = 'none';
     projectsSection.hidden = true;
     skillsSection.hidden = false;
     contactSection.hidden = true;
@@ -41,6 +44,7 @@ skillsButton.onclick = function(){
 
 contactButton.onclick = function(){
     aboutSection.hidden = true;
+    aboutSection.style.display = 'none';
     projectsSection.hidden = true;
     skillsSection.hidden = true;
     contactSection.hidden = false;

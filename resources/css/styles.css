@@ -69,7 +69,32 @@ body {
 
 #aboutMe {
     width: 100%;
-    background-color: bisque;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#profile {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+}
+
+#profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: white solid 2px;
+}
+
+#description {
+    width: 30%;  
+    height: 80%;
+    background-color: black;
 }
 
 /*about me end end*/
