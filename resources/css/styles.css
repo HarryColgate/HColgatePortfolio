@@ -1,0 +1,155 @@
+@font-face { /*Montserrat*/
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    font-family: 'Montserrat', serif;
+}
+
+body {
+    margin: 1;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+
+#container {
+    width: 1300px;
+    height: 700px;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background: linear-gradient( red, purple, purple);
+    display: flex;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#content {
+    background: green;
+    color: white;
+    margin: 0.5rem;
+    height: auto;
+    border-radius: 1.8rem;
+    height: 683px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+}
+
+#sectionsCont {
+    border-radius: 1.8rem 1.8rem 0 0;
+    height: 683px;
+    width: 100%;
+    align-self: inline-flex;
+    background-color: green;
+}
+
+#sectionsCont section {
+    margin: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+#sectionsCont #skills {
+    background-color: orangered;
+
+}
+
+#sectionsCont #contact {
+    background-color: purple;
+
+}
+
+/*about me start*/
+
+#sectionsCont #aboutMe {
+    width: 100%;
+    
+}
+
+#profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+}
+
+#description {
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*about me end end*/
+
+/*Projects start*/
+
+#projects {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: green;
+}
+
+
+/*projects end*/
+
+/*menu start*/
+
+#menu {
+    width: 100%;
+    align-self: flex-end;
+    display: inline-flex;
+    margin-bottom: 0px;
+    border-radius: 0rem 0rem 1.8rem 1.8rem;
+    justify-content: space-around;
+    height: 4rem;
+}
+
+#menu div {
+    border: aqua solid;
+    border-width: 0.2rem 0.2rem 0.2rem 0;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+}
+
+#menu .about {
+    border-bottom-left-radius: 1.8rem;
+    border-width: 0.2rem;
+}
+
+#menu .contact {
+    border-bottom-right-radius: 1.8rem;
+}
+
+/*menu end*/
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@media only screen and (max-height: 700px){
+    body {
+        align-items: start;
+    }
+}
