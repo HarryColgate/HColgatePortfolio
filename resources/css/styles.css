@@ -50,19 +50,14 @@ body {
     border-radius: 1.8rem 1.8rem 0 0;
     height: 683px;
     width: 100%;
-    align-self: inline-flex;
-    background-color: green;
+    display: flex;
+    justify-content: center;
 }
 
-#sectionsCont section {
-    margin: 1rem;
-    width: 20px;
-    height: 20px;
-}
+
 
 #sectionsCont #skills {
     background-color: orangered;
-
 }
 
 #sectionsCont #contact {
@@ -72,23 +67,9 @@ body {
 
 /*about me start*/
 
-#sectionsCont #aboutMe {
+#aboutMe {
     width: 100%;
-    
-}
-
-#profile {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 20%;
-}
-
-#description {
-    width: 40%;
-    justify-content: center;
-    align-items: center;
+    background-color: bisque;
 }
 
 /*about me end end*/
@@ -98,8 +79,7 @@ body {
 #projects {
     width: 100%;
     text-align: center;
-    justify-content: center;
-    background-color: green;
+    align-self: center;
 }
 
 
