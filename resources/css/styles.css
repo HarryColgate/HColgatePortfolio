@@ -21,6 +21,16 @@ body {
     background: #222;
 }
 
+a:link {
+    color: white;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: palevioletred;
+    text-decoration: none;
+}
+
 #container {
     width: 1300px;
     height: 700px;
@@ -52,17 +62,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-
-
-#sectionsCont #skills {
-    background-color: orangered;
-}
-
-#sectionsCont #contact {
-    background-color: purple;
-
 }
 
 /*about me start*/
@@ -97,6 +96,8 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
+    padding-right: 25px;
+    font-size: 1.25rem;
 }
 
 /*about me end end*/
@@ -109,15 +110,97 @@ body {
     align-self: center;
 }
 
-
 /*projects end*/
+
+/*Skills start*/
+
+#skills{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#skills h2{
+    font-size: 2rem;
+    justify-self: center;
+}
+
+#skillContainer{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+#skillContainer div{
+    display: flex;
+    margin: 10px;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    background-color: white;
+    color: #222;
+    border-radius: 10px;
+    width: 150px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Skills end*/
+
+/*Contact start*/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#contact h2{
+    font-size: 3rem;
+}
+
+#contactlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 90%;
+    font-size: 2rem;
+    color: white;
+    align-content: space-around;
+}
+
+.contactlink {
+    width: 50%;
+    display: flex;
+}
+
+#contactlist.left{
+    padding-left: 10px;
+}
+
+.contactlink img{
+    height: 100px;
+    width: 100px;
+}
+
+/*Contact end*/
 
 /*menu start*/
 
 #menu {
     width: 100%;
     align-self: flex-end;
-    display: inline-flex;
+    display: flex;
     margin-bottom: 0px;
     border-radius: 0rem 0rem 1.8rem 1.8rem;
     justify-content: space-around;
@@ -161,7 +244,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 850px){
     #aboutMe {
         flex-direction: column;
         
@@ -171,9 +254,25 @@ body {
         width: 100%;
         height: 100%;
     }
-    
+
     #description {
         width: 100%;  
         height: 50%;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    .contactlink {
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+    }
+
+    .contactlink img{
+        height: 62px;
+        width: 62px;
     }
 }

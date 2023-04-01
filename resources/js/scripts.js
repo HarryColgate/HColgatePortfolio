@@ -16,6 +16,8 @@ pageBody.onload = function() {
     projectsSection.hidden = true;
     skillsSection.hidden = true;
     contactSection.hidden = true;
+    contactSection.style.display = 'none';
+    skillsSection.style.display = 'none';
 }
 
 aboutButton.onclick = function(){
@@ -23,7 +25,9 @@ aboutButton.onclick = function(){
     aboutSection.style.display = 'flex';
     projectsSection.hidden = true;
     skillsSection.hidden = true;
+    skillsSection.style.display = 'none';
     contactSection.hidden = true;
+    contactSection.style.display = 'none';
 }
 
 projectsButton.onclick = function(){
@@ -31,7 +35,9 @@ projectsButton.onclick = function(){
     aboutSection.style.display = 'none';
     projectsSection.hidden = false;
     skillsSection.hidden = true;
-    contactSection.hidden = true;;
+    skillsSection.style.display = 'none';
+    contactSection.hidden = true;
+    contactSection.style.display = 'none';
 }
 
 skillsButton.onclick = function(){
@@ -39,7 +45,9 @@ skillsButton.onclick = function(){
     aboutSection.style.display = 'none';
     projectsSection.hidden = true;
     skillsSection.hidden = false;
+    skillsSection.style.display = 'flex';
     contactSection.hidden = true;
+    contactSection.style.display = 'none';
 }
 
 contactButton.onclick = function(){
@@ -47,7 +55,9 @@ contactButton.onclick = function(){
     aboutSection.style.display = 'none';
     projectsSection.hidden = true;
     skillsSection.hidden = true;
+    skillsSection.style.display = 'none';
     contactSection.hidden = false;
+    contactSection.style.display = 'flex';
 }
 
 /*Buttons end!!!!!!*/ 
